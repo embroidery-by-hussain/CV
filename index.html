@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ghulam Hussain - Professional CV</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Theme Toggle -->
+  <div class="theme-toggle">
+    <input type="checkbox" id="theme-switch" class="theme-switch">
+    <label for="theme-switch" class="theme-label">
+      <i class="fas fa-moon"></i><i class="fas fa-sun"></i><span class="theme-ball"></span>
+    </label>
+  </div>
+
+  <!-- Main -->
+  <main class="container">
+    <!-- Header -->
+    <header class="header">
+      <img src="https://i.postimg.cc/D8YBtVX6/IMG-20250227-WA0000.jpg" alt="Profile Picture" class="profile-img">
+      <h1>Ghulam Hussain</h1>
+      <p>Embroidery Designer | Web Designing</p>
+      <div class="contact-info">
+        <p><i class="fas fa-phone"></i> 0303-7777322</p>
+        <p><i class="fas fa-envelope"></i> narowalghulam@gmail.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Shakargarh City (Current: Shahdara, Lahore)</p>
+      </div>
+    </header>
+
+    <!-- Education -->
+    <section class="timeline">
+      <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+      <article class="timeline-item">
+        <h3>Intermediate (ICS)</h3>
+        <p>Govt College Shakargarh (2022)</p>
+        <ul><li>Specialized in Embroidery Designing</li></ul>
+      </article>
+      <article class="timeline-item">
+        <h3>Matric (Computer Science)</h3>
+        <p>Govt Ghulam Din Higher Secondary School Mangri (2020)</p>
+        <ul><li>Strong Creativity & Attention to Detail</li></ul>
+      </article>
+    </section>
+
+    <!-- Experience -->
+    <section class="experience">
+      <h2><i class="fas fa-briefcase"></i> Experience</h2>
+      <div class="experience-grid">
+        <article class="experience-card">
+          <h3>Embroidery Designer</h3>
+          <ul>
+            <li>Freelance Designer (2024 – Present)</li>
+            <li>Learning Wilcom & Tajima</li>
+            <li>Vector design & pattern creation</li>
+          </ul>
+        </article>
+        <article class="experience-card">
+          <h3>Web Development & Video Editing</h3>
+          <ul>
+            <li>Created custom social media content</li>
+            <li>Edited videos with Adobe Premiere Pro & CapCut</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects">
+      <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>Embroidery Design Portfolio</h3>
+          <p>Showcased on Instagram with creative custom designs.</p>
+          <a href="https://instagram.com/ghulam_hussain.1" target="_blank" class="project-link">View Portfolio</a>
+        </article>
+        <article class="project-card">
+          <h3>Responsive E-Commerce Website</h3>
+          <p>Built using HTML, CSS & JavaScript.</p>
+        </article>
+        <article class="project-card">
+          <h3>Video Editing Toolkit</h3>
+          <p>Includes Premiere Pro & After Effects templates.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Languages -->
+    <section class="languages">
+      <h2><i class="fas fa-language"></i> Languages | زبانیں</h2>
+      <div class="language-bars">
+        <article class="language">
+          <span>Urdu | اردو</span>
+          <div class="progress-bar" data-progress="100%">
+            <div class="progress"></div>
+          </div>
+        </article>
+        <article class="language">
+          <span>Punjabi | پنجابی</span>
+          <div class="progress-bar" data-progress="100%">
+            <div class="progress"></div>
+          </div>
+        </article>
+        <article class="language">
+          <span>English | انگریزی</span>
+          <div class="progress-bar" data-progress="55%">
+            <div class="progress"></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Summary -->
+    <section>
+      <article class="timeline-item">
+        <h2><i class="fas fa-user"></i> Summary</h2>
+        <p>Creative and detail-oriented Embroidery Designer with 1.5 years of professional experience in digital embroidery. Skilled in creating customized designs from pictures, converting artwork into embroidery-ready files, and delivering high-quality results for clients. Passionate about merging traditional embroidery methods with modern digital tools to create unique and innovative designs.</p>
+      </article>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <section class="social-links">
+        <h2><i class="fas fa-share-alt"></i> Let’s Connect</h2>
+        <div class="social-icons">
+          <a href="https://linkedin.com/in/ghulam-hussain-16756b24a" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://instagram.com/ghulam_hussain.1" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:narowalghulam@gmail.com"><i class="fas fa-envelope"></i></a>
+          <a href="tel:+923037777322"><i class="fas fa-phone"></i></a>
+        </div>
+      </section>
+      <div class="action-buttons">
+        <button class="print-button" onclick="window.print()"><i class="fas fa-print"></i> Print CV</button>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+  function toggleTheme() {
+    const html = document.documentElement;
+    const newTheme = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+  }
+  document.getElementById('theme-switch').addEventListener('change', toggleTheme);
+  document.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    if (savedTheme === 'dark') document.getElementById('theme-switch').checked = true;
+    // Animate progress bars
+    const animateProgressBars = () => {
+      document.querySelectorAll('.progress-bar').forEach(bar => {
+        const rect = bar.getBoundingClientRect();
+        if (rect.top < window.innerHeight) {
+          const target = bar.dataset.progress;
+          bar.querySelector('.progress').style.width = target;
+        }
+      });
+    };
+    window.addEventListener('scroll', animateProgressBars);
+    animateProgressBars();
+  });
+  </script>
+</body>
+</html>
